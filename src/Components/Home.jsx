@@ -6,6 +6,7 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import LoginForm from "./LoginForm";
 
 const Home = () => {
     const menus = [
@@ -22,14 +23,14 @@ const Home = () => {
     return (
         <section className="flex gap-6">
             <div
-                className={`bg-[#0e0e0e] min-h-screen ${open ? "w-72" : "w-16"
+                className={`bg-[#0e0e0e] min-h-screen ${open ? "w-60" : "w-16"
                     } duration-500 text-gray-100 px-4`}
             >
                 <div className="py-3 flex justify-end">
                     <HiMenuAlt3
                         size={26}
                         className="cursor-pointer"
-                        onClick={() => setOpen(!open)}
+                        onClick={() => setOpen(open)}
                     />
                 </div>
                 <div className="mt-4 flex flex-col gap-4 relative">
@@ -60,9 +61,10 @@ const Home = () => {
                     ))}
                 </div>
             </div>
-
         </section>
     );
 };
 
 export default Home;
+
+

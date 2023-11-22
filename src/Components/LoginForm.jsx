@@ -3,8 +3,8 @@ import React from 'react'
 const LoginForm = () => {
     return (
         <div>
-            <div className="flex justify-center items-center h-screen mt-[-700px]">
-                <div className="w-96 p-6 shadow-lg bg-slate-200 rounded-md">
+            <div className="flex justify-center items-center h-screen mx-[400px] mt-[-700px] ">
+                <div className="w-96 p-6 shadow-lg bg-slate-200 rounded-md ">
                     <h1 className="text-3xl block text-center font-semibold"><i className="fa-solid fa-user"></i> Login</h1>
                     <hr className="mt-3" />
                     <div className="mt-3">
